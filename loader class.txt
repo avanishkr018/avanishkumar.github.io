@@ -1,0 +1,26 @@
+script
+
+$(window).load(function() {
+
+    var $loader = $('.loader');
+
+    $loader.find('.fading-line').fadeOut();
+    $loader.fadeOut("fast");
+});
+css
+.fading-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/fading-line.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+html
+<div class="loader">
+      <div class="fading-line"></div>
+    </div>
+    
